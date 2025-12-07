@@ -15,7 +15,7 @@ services:
     container_name: immich_machine_learning
     # For hardware acceleration, add one of -[armnn, cuda, rocm, openvino, rknn] to the image tag.
     # Example tag: ${IMMICH_VERSION:-release}-cuda
-    image: ghcr.io/immich-app/immich-machine-learning:${IMMICH_VERSION:-release}-cuda
+    image: ghcr.io/immich-app/immich-machine-learning:v2.3.1-cuda
     volumes:
       - ./model-cache:/cache
       - ./immich_ml_main.py:/usr/src/immich_ml/main.py
