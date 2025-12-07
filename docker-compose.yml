@@ -42,8 +42,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./model-cache/:/root/.paddlex/official_models/
-      # - ./paddlex_ocr_pipeline.py:/usr/local/lib/python3.10/dist-packages/paddlex/inference/pipelines/ocr/pipeline.py
-      # - ./paddlex_ocr_result.py:/usr/local/lib/python3.10/dist-packages/paddlex/inference/pipelines/ocr/result.py
+      # - ./paddle_ocr/paddlex_ocr_pipeline.py:/usr/local/lib/python3.10/dist-packages/paddlex/inference/pipelines/ocr/pipeline.py
+      # - ./paddle_ocr/paddlex_ocr_result.py:/usr/local/lib/python3.10/dist-packages/paddlex/inference/pipelines/ocr/result.py
       - ./paddle_ocr/paddlex_ocr_pipeline.py:/root/PaddleX/paddlex/inference/pipelines/ocr/pipeline.py
       - ./paddle_ocr/paddlex_ocr_result.py:/root/PaddleX/paddlex/inference/pipelines/ocr/result.py
       - ./paddle_ocr/OCR.yaml:/OCR.yaml
